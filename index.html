@@ -2,7 +2,7 @@
 <html lang="en">    
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Self-taught Python Developer Portfolio Website">
+        <meta name="description" content="Wesley Ross | Python, HTML/CSS">
         <meta name="author" content="Wesley Ross">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,17 +12,14 @@
             .progress-container {width: 100%; height: 8px; background: #ccc;}
             .progress-bar {height: 8px; background: #4caf50; width: 0%;}
             dl {font-family:courier;}
-            .header {text-align: center; padding: 200px;}
-            .bg-img {background-image: url('./images/laptop_grey.jpg'); width: 100%; height: auto; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; opacity: 1.0;}
+            .header {text-align: center; padding: 100px;}
             .container {position: absolute; margin: 10px; width: auto;}
             .topnav {overflow: hidden; background-color: rgb(30, 89, 138);}
             .topnav a {float: left; color: #f2f2f2; text-align: center; padding: 14px 16px;             text-decoration: none; font-size: 17px;}
             .topnav a:hover {background-color: #ddd; color: black;}
-            h1 {font-family: courier; text-align: center; font-size: 60px; color: white; padding: 0px; font-size: 8vw;}
+            h1 {font-family: courier; text-align: center; font-size: 60px; color: black; padding: 0px;}
             h2 {text-align: center;}
-            .intro {text-align:left; font-family: courier;}
-            .column {float: left; width: 50%; column-gap: 40px;}
-            .row:after {content: ""; display: table; clear: both;}
+            .about_me {background-color: rgb(30, 89, 138); color: black; text-align: center;}
             footer a {color:#000000;}
             footer a:hover {color:blue;}
             .fa {
@@ -45,6 +42,49 @@
                 background: #55ACEE;
                 color: white;
             }
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 0px;
+                height: 300px;
+                color: white;
+                text-align: center;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .c {
+                float: left;
+                width: 50%;
+                padding: 0 10px;
+            }
+            .r {margin: 0 -5px;}
+            .r:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+                padding: 16px;
+                text-align: center;
+                background-color: white;
+            }
+            @media screen and (max-width: 600px) {
+                .c {
+                  width: 100%;
+                  display: block;
+                  margin-bottom: 20px;
+                }
+            }
         </style>
         <script>
             window.onscroll = function() {myFunction()};
@@ -55,7 +95,7 @@
               document.getElementById("myBar").style.width = scrolled + "%";
             }
         </script>
-        <title>Self-taught Python Developer - Wesley Ross</title>
+        <title>Wesley Ross | Aspiring Python & Web Developer</title>
     </head>
     <body>
         <div class="line">
@@ -64,33 +104,58 @@
             </div>
         </div>
         <div class="bg-img">
-         <div class="container">
-          <div class="topnav">
-            <a href="#A">ABOUT</a>
-            <a href="#P">PROJECTS</a>
-          </div>
-         </div>
-         <div class="header">
-            <h1>Wesley Ross</h1>
-            <p style="font-family: courier; font-size: 30px; color: white;">Self-taught Python Developer</p>
-         </div>
+            <div class="container">
+                <div class="topnav">
+                    <a href="#A">ABOUT</a>
+                    <a href="#P">PROJECTS</a>
+                </div>
+            </div>
+            <div class="header">
+                <h1>Wesley Ross</h1>
+                <p style="font-family: courier; font-size: 30px; color: black;">Aspiring Python & Web Developer</p>
+                <div style='text-align: center;'>
+                    <img src='static/nextpng.com.png' alt='spiderman' width='200' height='200'>
+                </div>
+            </div>
         </div>
-        <br>
         <br>
         <div class="row">
-            <div class="column"  id="A">
-                <fieldset style="background-color: #e6e6fa; border: 0;">
-                <h2 style="text-align: center;">ABOUT <span style="color: rgb(30, 89, 138);">ME</span></h2>
-                <p class="intro">I am a motivated and ambitious self-taught <b><i>Python</i></b> developer. As a Computer Science student I've learnt and gained experience with Python and Java at a tertiary level. I am currently employed as an IT Technical Coordinator but I am also being mentored in Python development at my current place of employment by the Senior Developer. I have completed a number of development projects and contributed to the company's day-to-day processes with my code. My main aim is to be completely focused on software development.</p>
-                </fieldset>
+            <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;"></div>
+            <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;"  id="A">
+                <h2 style="font-family: courier;">Hi, I'm Wesley.</h2>
+                <p style="font-family: sans-serif; line-height: 1.6;">I am a motivated and ambitious self-taught Python developer. As a Computer Science student I've learnt and gained experience with Python and Java at a tertiary level. I am currently employed as an IT Technical Coordinator but I am also being mentored in Python development at my current place of employment by the Senior Developer. I have completed a number of development projects and contributed to the company's day-to-day processes with my code. My main aim is to be completely focused on software development.</p>
             </div>
-            <div class="column">
-                <fieldset style="background-color: #e6e6fa; border: 0;">
-                    <h3 style="font-weight: bold;">MY SKILLS</h3>
-                    <ul><li>Python</li><li>PostgreSQL</li><li>HTML</li><li>Django</li><li>Testing and debugging</li><li>Automation</li><li>Linux Command Line</li><li>Testing and Debugging</li><li>Web scraping</li></ul>
-                </fieldset>
+            <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;"></div>
+        </div>
+        <br>
+        <div class="r">
+            <div class="c">
+              <div class="card">
+                <h3 style="font-weight: bold;">Software Development</h3>
+                    <p><i>Automation, Machine Learning, and AI are among the few things that got me interested in software development.</i></p>
+                    <br>
+                    <p style="color: rgb(30, 89, 138);"><b>Skills:</b></p>
+                    <p>Python, PostgresQL, Django</p>
+                    <br>
+                    <p style="color: rgb(30, 89, 138);"><b>Dev Tools:</b></p>
+                    <p>Github, Komodo Edit, Terminal</p>
+              </div>
+            </div>
+            <div class="c">
+              <div class="card">
+                <h3 style="font-weight: bold; padding: 9px;">Front-End Development</h3>
+                    <p><i>I like to code from scratch and enjoy bringing things to life in the browser!</i></p>
+                    <br>
+                    <p style="color: rgb(30, 89, 138);"><b>Skills:</b></p>
+                    <p>HTML, CSS</p>
+                    <br>
+                    <p style="color: rgb(30, 89, 138);"><b>Dev Tools:</b></p>
+                    <p>Github, Komodo Edit, Terminal</p>
+              </div>
             </div>
         </div>
+        <br>
+        <br>
         <br>
         <fieldset>
             <legend style="font-weight: bold;">Certifications</legend>
