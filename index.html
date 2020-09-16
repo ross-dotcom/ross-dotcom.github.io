@@ -9,13 +9,13 @@
         <style>
             body {font-family:arial;}
             .line {position: fixed; top: 0; z-index: 1; width: 100%; background-color: #f1f1f1;}
-            .progress-container {width: 100%; height: 8px; background: #ccc;}
-            .progress-bar {height: 8px; background: #4caf50; width: 0%;}
+            .progress-container {width: 100%; height: 4px; background: #ccc;}
+            .progress-bar {height: 4px; background: red; width: 0%;}
             dl {font-family:courier;}
             .header {text-align: center; padding: 100px;}
             .container {position: absolute; margin: 10px; width: auto;}
             .topnav {overflow: hidden; background-color: rgb(30, 89, 138);}
-            .topnav a {float: left; color: #f2f2f2; text-align: center; padding: 14px 16px;             text-decoration: none; font-size: 17px;}
+            .topnav a {float: left; color: #f2f2f2; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
             .topnav a:hover {background-color: #ddd; color: black;}
             h1 {font-family: courier; text-align: center; font-size: 60px; color: black; padding: 0px;}
             h2 {text-align: center;}
@@ -42,18 +42,13 @@
                 background: #55ACEE;
                 color: white;
             }
-            .column {
-                float: left;
-                width: 33.33%;
-                padding: 0px;
-                height: 300px;
+            .hi {
+                float: center;
+                width: 100%;
+                padding: 50px;
+                height: 0px;
                 color: white;
                 text-align: center;
-            }
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
             }
             * {
                 box-sizing: border-box;
@@ -73,7 +68,7 @@
                 clear: both;
             }
             .card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                 padding: 16px;
                 text-align: center;
                 background-color: white;
@@ -119,14 +114,10 @@
             </div>
         </div>
         <br>
-        <div class="row">
-            <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;"></div>
-            <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;"  id="A">
-                <h2 style="font-family: courier;">Hi, I'm Wesley.</h2>
-                <p style="font-family: sans-serif; line-height: 1.6;">I am a motivated and ambitious self-taught Python developer. As a Computer Science student I've learnt and gained experience with Python and Java at a tertiary level. I am currently employed as an IT Technical Coordinator but I am also being mentored in Python development at my current place of employment by the Senior Developer. I have completed a number of development projects and contributed to the company's day-to-day processes with my code. My main aim is to be completely focused on software development.</p>
-            </div>
-            <div class="column" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 350px;"></div>
-        </div>
+        <section class="hi" style="background-image: linear-gradient(rgb(30, 89, 138), rgb(30, 144, 245)); height: 300px;"  id="A">
+            <h2 style="font-family: courier;">Hi, I'm Wesley.</h2>
+            <p style="font-family: sans-serif; line-height: 1.9; text-align: center;">I am a motivated and ambitious self-taught Python developer. As a Computer Science student I've learnt and gained experience with Python and Java at a tertiary level. I am currently employed as an IT Technical Coordinator but I am also being mentored in Python development at my current place of employment by the Senior Developer. I have completed a number of development projects and contributed to the company's day-to-day processes with my code. My main aim is to be completely focused on software development.</p>
+        </section>
         <br>
         <div class="r">
             <div class="c">
