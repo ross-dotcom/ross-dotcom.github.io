@@ -118,6 +118,7 @@
             
                 function buttonFunction() {
                 document.getElementById('myImage').src='./images/smile_after.png';
+                document.getElementById("myBtn").disabled = true;
             }
         </script>
         <title>Wesley Ross | Aspiring Python & Web Developer</title>
@@ -260,7 +261,7 @@
         <br>
         <div class="smiley">
             <img id="myImage" src="./images/smile_before.png" style="width:100px"><br><br>
-            <button type="button" onclick="buttonFunction()">Thank you for visiting!</button>
+            <button id="myBtn" type="button" onclick="buttonFunction()">Thank you for visiting!</button>
         </div>
         <br>
         <br>
