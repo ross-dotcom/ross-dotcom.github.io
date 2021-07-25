@@ -3,4 +3,7 @@ function checkEmpty() {
         alert("Please add a task");
         return false;
     }
+    else {
+        document.getElementById("tasks").innerHTML = value;
+    }
 };
