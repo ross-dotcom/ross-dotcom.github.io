@@ -6,4 +6,4 @@ function checkEmpty() {
     else {
         document.getElementById("tasks").innerHTML = value;
     }
-};
+}
