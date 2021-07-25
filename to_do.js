@@ -1,6 +1,6 @@
 function checkEmpty() {
     if (document.getElementById("input-task").value.trim() == "") {
-        alert("Test!");
+        alert("Please enter a task");
         return false;
     }
-}
+};
