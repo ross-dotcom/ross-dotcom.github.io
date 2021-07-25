@@ -1,3 +1,5 @@
 function checkEmpty() {
-    alert("Test!")
+    if (document.getElementById("input-task").value == "") {
+        alert("Test!");   
+    }
 }
