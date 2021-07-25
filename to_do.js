@@ -1,0 +1,3 @@
+function checkEmpty() {
+    alert("Test!")
+}
