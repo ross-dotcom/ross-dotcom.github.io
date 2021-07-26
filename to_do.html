@@ -10,10 +10,12 @@
         <title>Wesley Ross | To do Web App</title>
         <script>
         function checkEmpty() {
-            /**if (document.getElementById("input-task").value.trim() == "") {
+            if (document.getElementById("input-task").value.trim() == "") {
                 alert("Please add a task");
-            }*/
-            alert("Please add a task");
+            }
+            else {
+                alert("First if not working!");
+            }
         }
         </script>
     </head>
@@ -22,7 +24,7 @@
             <div id="tasker-header" class="tasker-header">
                 <input type="text" id="input-task" placeholder="Enter a task">
                 <!--<input type="button" id="btnCheck" value="Add task"/>-->
-                <button onclick="checkEmpty()">Add a task</button>
+                <button onclick="checkEmpty()">Add task</button>
             </div>
             <div class="tasker-body">
                 <ul id="tasks"></ul>
