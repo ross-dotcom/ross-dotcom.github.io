@@ -1,8 +1,8 @@
 function checkEmpty() {
     if (document.getElementById("input-task").value.trim() == "") {
         alert("Please add a task");
-        return false;
+    }
+    else {
+        alert("First if not working!");
     }
 }
-
-document.getElementById("btn-check").innerHTML = checkEmpty();
