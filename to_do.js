@@ -14,7 +14,9 @@ function myFunction() {
         alert("Please add a task");
     }
     else {
+        alert(text);
         var li = "<li>" + text + "</li>";
+        alert(li);
         document.getElementById("list").appendChild(li);
     }
 }
