@@ -12,17 +12,16 @@
         function checkEmpty() {
             if (document.getElementById("input-task").value.trim() == "") {
                 alert("Please add a task");
-                return false;
             }
         }
-        document.getElementById("btn-check").innerHTML = checkEmpty();
         </script>
     </head>
     <body>
         <div id="tasker" class="tasker">
             <div id="tasker-header" class="tasker-header">
                 <input type="text" id="input-task" placeholder="Enter a task">
-                <input type="button" id="btnCheck" value="Add task"/>
+                <!--<input type="button" id="btnCheck" value="Add task"/>-->
+                <button onclick="checkEmpty()">Add task</button>
             </div>
             <div class="tasker-body">
                 <ul id="tasks"></ul>
