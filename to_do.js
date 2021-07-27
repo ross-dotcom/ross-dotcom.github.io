@@ -10,10 +10,12 @@ function myFunction() {
     else {
         var li = document.createElement("li");
         li.innerHTML = text;
-        var x = document.createElement("INPUT");
-        x.setAttribute("type", "checkbox");
-        document.getElementById("list").appendChild(x, li);
+        //document.getElementById("list").appendChild(li);
         
-        //document.body.appendChild(x);
+        var liCheckBox = document.createElement("input");
+        liCheckBox.type = "checkbox";
+        
+        li.innerHTML += liCheckbox.outerHTML;
+        document.getElementById("list").appendChild(li);
     }
 }
