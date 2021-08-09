@@ -1,4 +1,6 @@
 /* exported myFunction */
+/* exported removeAll */
+/* exported removeItem */
 
 function myFunction() {
     
@@ -24,4 +26,10 @@ function myFunction() {
 function removeAll() {
     
     document.getElementById("list").innerHTML = "";
+}
+
+function removeItem() {
+    
+    var itemToRemove = document.getElementById("list");
+    itemToRemove.parentNode.removeChild(itemToRemove);
 }
