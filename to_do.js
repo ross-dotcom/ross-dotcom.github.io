@@ -23,5 +23,5 @@ function myFunction() {
 
 function removeAll() {
     
-    document.getElementById("add").innerHTML = "";
+    document.getElementById("idea").innerHTML = "";
 }
