@@ -19,6 +19,11 @@ function myFunction() {
         cb.checked = false;
         li.appendChild(cb);
         
+        var rm = document.createElement("input");
+        rm.type = "button";
+        rm.value = "Remove";
+        li.appendChild(rm);
+        
         document.getElementById("list").appendChild(li);
     }
 }
