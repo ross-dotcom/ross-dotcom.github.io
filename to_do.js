@@ -27,9 +27,3 @@ function removeAll() {
     
     document.getElementById("list").innerHTML = "";
 }
-
-function removeItem() {
-    
-    var itemToRemove = document.getElementById("list");
-    itemToRemove.parentNode.removeChild(itemToRemove);
-}
