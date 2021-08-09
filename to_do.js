@@ -23,5 +23,5 @@ function myFunction() {
 
 function removeAll() {
     
-    document.getElementById("idea").innerHTML = "";
+    document.getElementById("idea").parentNode.removeChild();
 }
