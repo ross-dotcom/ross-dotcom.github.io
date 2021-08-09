@@ -20,3 +20,8 @@ function myFunction() {
         document.getElementById("list").appendChild(li);
     }
 }
+
+function removeAll() {
+    
+    document.getElementById("idea").innerHTML = "";
+}
