@@ -1,7 +1,16 @@
 /* exported myFunction */
 /* exported removeAll */
 /* exported removeItem */
-/* exported time */
+/* exported display_time */
+
+function display_time() {
+
+    n = new Date();
+    y = n.getFullYear;
+    m = n.getMonth()+1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+}
 
 function myFunction() {
     
