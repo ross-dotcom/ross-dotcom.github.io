@@ -1,12 +1,16 @@
 /* exported myFunction */
 /* exported removeAll */
 /* exported removeItem */
+/* exported time */
 
-n = new Date();
-y = n.getFullYear;
-m = n.getMonth()+1;
-d = n.getDate();
-document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+function time() {
+
+    n = new Date();
+    y = n.getFullYear;
+    m = n.getMonth()+1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+}
 
 function myFunction() {
     
