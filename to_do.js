@@ -15,6 +15,8 @@ function display_time() {
 
 function myFunction() {
     
+    var text = document.getElementById("idea").value;
+    
     if (text == "") {
         alert("Please add a task");
     }
