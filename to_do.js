@@ -16,6 +16,12 @@ function display_time() {
 function myFunction() {
     
     var text = document.getElementById("idea").value;
+    text.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            document.getElementById("add").click();
+            }
+    });
     
     if (text == "") {
         alert("Please add a task");
