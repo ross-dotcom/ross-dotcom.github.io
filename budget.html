@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Wesley Ross | Budgeting">
+        <meta name="author" content="Wesley Ross">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="to_do.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Wesley Ross | To do Web App</title>
+    </head>
+    <style>
+        #heading {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 10px;
+        }
+        #tasker {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 10px;
+            min-height: 100%;
+        }
+    </style>
+    <body>
+        <div id="heading">
+            <h1 style="font-family: 'Trebuchet', 'sans-serif'; text-align: center;">Budgeting</h1>
+            <hr>
+        </div>
+        <div id="tasker" class="tasker">
+            <div id="tasker-header" class="tasker-header">
+                <input type="text" id="idea" placeholder="Enter a task">
+                <input type="button" value="Add task" id="add" onclick="myFunction()"/>
+            </div>
+            <div class="tasker-body">
+                <ul id="list"></ul>
+            </div>
+            <div>
+                <input type="button" value="Clear List" onclick="removeAll()"
+            </div>
+        </div>
+    </body>
+</html>
