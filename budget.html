@@ -23,6 +23,9 @@
             padding: 10px;
             min-height: 100%;
         }
+        ul {
+            margin: 10px 0;
+        }
     </style>
     <body>
         <div id="heading">
@@ -30,9 +33,8 @@
             <hr>
         </div>
         <div id="tasker" class="tasker">
-            <div id="tasker-header" class="tasker-header">
-                <input type="text" id="idea" placeholder="Item">
-                <label for="amount">R</label>
+            <div id="tasker-header" class="tasker-header"> 
+                <input type="text" id="idea" placeholder="Item"> &nbsp &nbsp
                 <input type="text" id="amount" placeholder="Amount">
                 <input type="button" value="Add item" id="add" onclick="myFunction()"/>
             </div>

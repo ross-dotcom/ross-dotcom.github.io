@@ -5,20 +5,39 @@
 
 function myFunction() {
     
-    var text = document.getElementById("idea").value;
+    var text = document.getElementById("idea").value; /*Gets value in 'item' field and assigns it to 'text'*/
     
-    var amt = document.getElementById("amount").value;
+    var amt = document.getElementById("amount").value; /*Gets value in 'amount' field and assigns it to 'amt'*/
     
-    if (text == "") {
-        alert("Please add a task");
+    if (text == "" && amt == "") {
+        alert("Please add an item and its amount");
+    }
+    else if (text == "") {
+        alert("Please add an item");
+    }
+    else if (amt == "") {
+        alert("Please add an amount");
+    }
+    else if (Number.isNaN(parseInt(amt))) {
+        alert("Amount should contain only numbers!")
     }
     else {
-        var li = document.createElement("li");
-        li.innerHTML = text;
+        /*Item*/
+        var t = document.createElement("label");
+        t.innerHTML = text;
+        
+        /*Amount*/
+        var a = document.createElement("li");
+        a.innerHTML = 'R' + amt;
+        
+        /*Break*/
+        var b = document.createElement("br");
         
         var cb = document.createElement("input");
         
-        document.getElementById("list").appendChild(li);
+        document.getElementById("list").appendChild(t);
+        document.getElementById("list").appendChild(a);
+        document.getElementById("list").appendChild(b);
     }
 }
 
