@@ -34,7 +34,7 @@ function myFunction() {
         var b = document.createElement("br");
         
         /*Total*/
-        var total = document.createElement("p")
+        var total = document.createElement("p");
         total.innerHTML = amt;
         
         var cb = document.createElement("input");
