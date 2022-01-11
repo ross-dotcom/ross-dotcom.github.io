@@ -39,7 +39,7 @@ function myFunction() {
         document.getElementById("list").appendChild(a);
         document.getElementById("list").appendChild(b);
         
-        document.getElementById("total").appendChild(total);
+        /*document.getElementById("total").appendChild(total);*/
     }
 }
 
