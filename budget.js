@@ -33,10 +33,6 @@ function myFunction() {
         /*Break*/
         var b = document.createElement("br");
         
-        /*Total*/
-        var total = document.createElement("p");
-        total.innerHTML = amt;
-        
         var cb = document.createElement("input");
         
         document.getElementById("list").appendChild(t);
@@ -50,4 +46,9 @@ function myFunction() {
 function removeAll() {
     
     document.getElementById("list").innerHTML = "";
+}
+
+function calculateTotal() {
+    
+    document.getElementById("total").innerHTML = amt;
 }
