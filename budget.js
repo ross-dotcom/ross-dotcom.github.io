@@ -19,7 +19,7 @@ function myFunction() {
         alert("Please add an amount");
     }
     else if (Number.isNaN(parseInt(amt))) {
-        alert("Amount should contain only numbers!")
+        alert("Amount should contain only numbers!");
     }
     else {
         /*Item*/
