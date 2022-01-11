@@ -33,11 +33,16 @@ function myFunction() {
         /*Break*/
         var b = document.createElement("br");
         
+        /*Total*/
+        var total = document.createElement("p")
+        
         var cb = document.createElement("input");
         
         document.getElementById("list").appendChild(t);
         document.getElementById("list").appendChild(a);
         document.getElementById("list").appendChild(b);
+        
+        document.getElementById("total").appendChild(a);
     }
 }
 
