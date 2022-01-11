@@ -35,6 +35,7 @@ function myFunction() {
         
         /*Total*/
         var total = document.createElement("p")
+        total.innerHTML = amt;
         
         var cb = document.createElement("input");
         
@@ -42,7 +43,7 @@ function myFunction() {
         document.getElementById("list").appendChild(a);
         document.getElementById("list").appendChild(b);
         
-        document.getElementById("total").appendChild(a);
+        document.getElementById("total").appendChild(total);
     }
 }
 
