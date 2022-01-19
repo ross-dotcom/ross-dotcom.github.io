@@ -3,24 +3,22 @@
 /* exported removeItem */
 /* exported display_time */
 
-var MyApp = {};
-
 function myFunction() {
     
     var text = document.getElementById("idea").value; /*Gets value in 'item' field and assigns it to 'text'*/
     
-    var MyApp.amt = document.getElementById("amount").value; /*Gets value in 'amount' field and assigns it to 'amt'*/
+    var amt = document.getElementById("amount").value; /*Gets value in 'amount' field and assigns it to 'amt'*/
     
-    if (text == "" && MyApp.amt == "") {
+    if (text == "" && amt == "") {
         alert("Please add an item and its amount");
     }
     else if (text == "") {
         alert("Please add an item");
     }
-    else if (MyApp.amt == "") {
+    else if (amt == "") {
         alert("Please add an amount");
     }
-    else if (Number.isNaN(parseInt(MyApp.amt))) {
+    else if (Number.isNaN(parseInt(amt))) {
         alert("Amount should contain only numbers!");
     }
     else {
@@ -30,7 +28,7 @@ function myFunction() {
         
         /*Amount*/
         var a = document.createElement("li");
-        a.innerHTML = 'R' + MyApp.amt;
+        a.innerHTML = 'R' + amt;
         
         /*Break*/
         var b = document.createElement("br");
@@ -42,6 +40,7 @@ function myFunction() {
         document.getElementById("list").appendChild(b);
         
         /*document.getElementById("total").appendChild(total);*/
+        return amt;
     }
 }
 
@@ -50,7 +49,7 @@ function removeAll() {
     document.getElementById("list").innerHTML = "";
 }
 
-function calculateTotal() {
+function calculateTotal(amt=myFunction()) {
     
-    document.getElementById("total").innerHTML = MyApp.amt;
+    document.getElementById("total").innerHTML = amt;
 }
