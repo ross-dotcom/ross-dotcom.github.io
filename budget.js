@@ -49,7 +49,7 @@ function removeAll() {
     document.getElementById("list").innerHTML = "";
 }
 
-function calculateTotal(amt=myFunction()) {
+function calculateTotal(amt=myFunction) {
     
     document.getElementById("total").innerHTML = amt;
 }
