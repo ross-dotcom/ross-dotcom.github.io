@@ -3,11 +3,13 @@
 /* exported removeItem */
 /* exported display_time */
 
+var MyApp = {};
+
 function myFunction() {
     
     var text = document.getElementById("idea").value; /*Gets value in 'item' field and assigns it to 'text'*/
     
-    var amt = document.getElementById("amount").value; /*Gets value in 'amount' field and assigns it to 'amt'*/
+    var MyApp.amt = document.getElementById("amount").value; /*Gets value in 'amount' field and assigns it to 'amt'*/
     
     if (text == "" && amt == "") {
         alert("Please add an item and its amount");
@@ -50,5 +52,5 @@ function removeAll() {
 
 function calculateTotal() {
     
-    document.getElementById("total").innerHTML = amt;
+    document.getElementById("total").innerHTML = MyApp.amt;
 }
