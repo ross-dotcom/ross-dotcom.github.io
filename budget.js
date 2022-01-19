@@ -11,16 +11,16 @@ function myFunction() {
     
     var MyApp.amt = document.getElementById("amount").value; /*Gets value in 'amount' field and assigns it to 'amt'*/
     
-    if (text == "" && amt == "") {
+    if (text == "" && MyApp.amt == "") {
         alert("Please add an item and its amount");
     }
     else if (text == "") {
         alert("Please add an item");
     }
-    else if (amt == "") {
+    else if (MyApp.amt == "") {
         alert("Please add an amount");
     }
-    else if (Number.isNaN(parseInt(amt))) {
+    else if (Number.isNaN(parseInt(MyApp.amt))) {
         alert("Amount should contain only numbers!");
     }
     else {
@@ -30,7 +30,7 @@ function myFunction() {
         
         /*Amount*/
         var a = document.createElement("li");
-        a.innerHTML = 'R' + amt;
+        a.innerHTML = 'R' + MyApp.amt;
         
         /*Break*/
         var b = document.createElement("br");
