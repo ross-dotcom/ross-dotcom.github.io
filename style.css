@@ -107,62 +107,57 @@ a:link, a:visited {
   border-radius: 25px;
 }
 
-@media only screen and (max-width: 1199px) {
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'head_img head_img head_img head_img'
-      'header header header header'
-      'left main main right'
-      'left soft_dev soft_dev right'
-      'left front_end front_end right'
-      'left projects projects right'
-      'left project1 project1 right'
-      'left project2 project2 right'
-      'left project3 project3 right'
-      'left project4 project4 right'
-      'left certifications certifications right'
-      'left certification1 certification2 right'
-      'left certification3 certification4 right'
-      'left also also right'
-      'left smiley smiley right'
-      'footer footer footer footer';
-    grid-gap: 10px;
-  }
-  
-  .left { grid-area: left; padding: 130px; }
-  .right { grid-area: right; padding: 130px; }
+.tablet-container { display: none; }
+
+@media only screen and (max-width: 1200px) {
+  .left { grid-area: left; padding: 60px; }
+  .right { grid-area: right; padding: 60px; }
 }
 
-@media only screen and (max-width: 999px) {
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      'head_img head_img head_img head_img'
-      'header header header header'
-      'left main main right'
-      'left soft_dev soft_dev right'
-      'left front_end front_end right'
-      'left projects projects right'
-      'left project1 project1 right'
-      'left project2 project2 right'
-      'left project3 project3 right'
-      'left project4 project4 right'
-      'left certifications certifications right'
-      'left certification1 certification1 right'
-      'left certification2 certification2 right'
-      'left certification3 certification3 right'
-      'left certification4 certification4 right'
-      'left also also right'
-      'left smiley smiley right'
-      'footer footer footer footer';
-    grid-gap: 10px;
-  }
-  
-  .left { grid-area: left; padding: 150px; }
-  .right { grid-area: right; padding: 150px; }
+@media only screen and (max-width: 1024px) {
+  body p { font-size: 2vw; }
+  .left { grid-area: left; padding: 30px; }
+  .right { grid-area: right; padding: 30px; }
 }
 
-@media only screen and (max-width: 784px) {
-  .head_img { display: none; }
+@media only screen and (max-width: 768px) {
+  .grid-container { display: none; }
+  .tablet-container { display: contents; }
+  .left { display: none; }
+  .right { display: none; }
+  .head_img { padding: 120px; }
+  body p, a { font-size: 14px; }
+  .header { padding-bottom: 5px; }
+  .header h1 { font-size: 32px; }
+  .intro { margin: 50px; }
+  .soft_dev { margin: 65px; }
+  .front_end { margin: 65px; }
+  .project1 { margin-bottom: 80px; margin-left: 80px; margin-right: 80px; }
+  .project2 { margin: 80px; }
+  .project3 { margin: 80px; }
+  .project4 { margin: 80px; }
+  .certification1 { margin-bottom: 40px; margin-left: 140px; margin-right: 140px; }
+  .certification2 { margin-bottom: 40px; margin-left: 140px; margin-right: 140px; }
+  .certification3 { margin-bottom: 40px; margin-left: 140px; margin-right: 140px; }
+  .certification4 { margin-bottom: 40px; margin-left: 140px; margin-right: 140px; }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid-container { display: none; }
+  .tablet-container { display: contents; }
+  .head_img { padding: 80px; }
+  body p, a { font-size: 14px; }
+  .header { padding-bottom: 5px; }
+  .header h1 { font-size: 32px; }
+  .intro { margin: 50px; }
+  .soft_dev { margin: 65px; }
+  .front_end { margin: 65px; }
+  .project1 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
+  .project2 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
+  .project3 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
+  .project4 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
+  .certification1 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
+  .certification2 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
+  .certification3 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
+  .certification4 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
 }
