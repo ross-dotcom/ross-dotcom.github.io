@@ -130,34 +130,59 @@ a:link, a:visited {
   .header { padding-bottom: 5px; }
   .header h1 { font-size: 32px; }
   .intro { margin: 50px; }
-  .soft_dev { margin: 65px; }
-  .front_end { margin: 65px; }
-  .project1 { margin-bottom: 80px; margin-left: 80px; margin-right: 80px; }
-  .project2 { margin: 80px; }
-  .project3 { margin: 80px; }
-  .project4 { margin: 80px; }
+  .soft_dev { margin: 30px; }
+  .front_end { margin: 30px; }
+  .project1 { margin: 30px; }
+  .project2 { margin: 30px; }
+  .project3 { margin: 30px; }
+  .project4 { margin: 30px; }
   .certification1 { margin-bottom: 40px; margin-left: 140px; margin-right: 140px; }
   .certification2 { margin-bottom: 40px; margin-left: 140px; margin-right: 140px; }
   .certification3 { margin-bottom: 40px; margin-left: 140px; margin-right: 140px; }
   .certification4 { margin-bottom: 40px; margin-left: 140px; margin-right: 140px; }
+  .smiley { text-align: center; font-family: arial; padding: 30px; }
 }
 
 @media only screen and (max-width: 480px) {
   .grid-container { display: none; }
   .tablet-container { display: contents; }
-  .head_img { padding: 80px; }
-  body p, a { font-size: 14px; }
+  .head_img { padding: 65px; }
+  body p, a { font-size: 16px; }
   .header { padding-bottom: 5px; }
   .header h1 { font-size: 32px; }
-  .intro { margin: 50px; }
-  .soft_dev { margin: 65px; }
-  .front_end { margin: 65px; }
-  .project1 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
-  .project2 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
-  .project3 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
-  .project4 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
-  .certification1 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
-  .certification2 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
-  .certification3 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
-  .certification4 { margin-bottom: 20px; margin-left: 80px; margin-right: 80px; }
+  .header h2 { font-size: 16px; }
+  .intro { margin: 30px; }
+  .soft_dev { margin: 30px; }
+  .front_end { margin: 30px; }
+  .project1 { margin: 30px; }
+  .project2 { margin: 30px; }
+  .project3 { margin: 30px; }
+  .project4 { margin: 30px; }
+  .certification1 { margin: 30px; }
+  .certification2 { margin: 30px; }
+  .certification3 { margin: 30px; }
+  .certification4 { margin: 30px; }
+  .smiley { text-align: center; font-family: arial; padding: 30px; }
+}
+
+@media only screen and (max-width: 390px) {
+  .grid-container { display: none; }
+  .tablet-container { display: contents; }
+  .head_img { padding: 65px; }
+  body p, a { font-size: 16px; }
+  .header { padding-bottom: 5px; }
+  .header h1 { font-size: 32px; }
+  .header h2 { font-size: 16px; }
+  .intro { margin: 30px; }
+  .soft_dev { margin: 30px; }
+  .front_end { margin: 30px; }
+  .project1 { margin: 30px; }
+  .project2 { margin: 30px; }
+  .project3 { margin: 30px; }
+  .project4 { margin: 30px; }
+  .certification1 { margin: 30px; }
+  .certification2 { margin: 30px; }
+  .certification3 { margin: 30px; }
+  .certification4 { margin: 30px; }
+  .smiley { text-align: center; font-family: arial; padding: 30px; }
 }
