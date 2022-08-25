@@ -8,7 +8,7 @@
 
 body p {
   line-height: 1.8;
-  font-size: 1.4vw;
+  font-size: 1.2vw;
 }
 
 .grid-container {
@@ -32,28 +32,28 @@ body p {
 
 .head_img { grid-area: head_img; padding: 180px; background-image: url("images/python_signal_crop_1.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover; width: 100%; }
 
-.header { grid-area: header; text-align: center; font-family: arial; padding-top: 60px; padding-bottom: 30px; color: black; font-size: 2vw; }
+.header { grid-area: header; text-align: center; font-family: arial; padding-top: 60px; padding-bottom: 30px; color: black; font-size: 1.6vw; }
 
 .left { grid-area: left; padding: 100px; }
 
 .intro { grid-area: main; text-align: center; font-family: arial; padding-bottom: 50px; color: #203535; }
 
-.soft_dev { grid-area: soft_dev; text-align: center; font-family: arial; background-color: #4169E1; color: white; padding: 30px; }
-.front_end { grid-area: front_end; text-align: center; font-family: arial; background-color: #FF4500; color: white; padding: 30px; }
+.soft_dev { grid-area: soft_dev; text-align: center; font-family: arial; background-color: #4169E1; color: white; padding: 30px; border-radius: 25px; }
+.front_end { grid-area: front_end; text-align: center; font-family: arial; background-color: #FF4500; color: white; padding: 30px;  border-radius: 25px; }
 
 .projects { grid-area: projects; text-align: center; font-family: arial; padding-top: 60px; color: #203535; }
-.project1 { grid-area: project1; border: 2px solid black; text-align: center; font-family: arial; padding: 20px; color: #203535; }
-.project2 { grid-area: project2; border: 2px solid black; text-align: center; font-family: arial; padding: 20px; color: #203535; }
-.project3 { grid-area: project3; border: 2px solid black; text-align: center; font-family: arial; padding: 20px; color: #203535; }
-.project4 { grid-area: project4; border: 2px solid black; text-align: center; font-family: arial; padding: 20px; color: #203535; }
+.project1 { grid-area: project1; border: 2px solid black; text-align: center; font-family: arial; padding: 20px; color: #203535; border-radius: 25px; }
+.project2 { grid-area: project2; border: 2px solid black; text-align: center; font-family: arial; padding: 20px; color: #203535; border-radius: 25px; }
+.project3 { grid-area: project3; border: 2px solid black; text-align: center; font-family: arial; padding: 20px; color: #203535; border-radius: 25px; }
+.project4 { grid-area: project4; border: 2px solid black; text-align: center; font-family: arial; padding: 20px; color: #203535; border-radius: 25px; }
 
 .certifications { grid-area: certifications; text-align: center; font-family: arial; padding-top: 60px; color: #203535; }
-.certification1 { grid-area: certification1; text-align: center; font-family: arial; background-color: #8B0000; padding: 20px; color: white; }
-.certification2 { grid-area: certification2; text-align: center; font-family: arial; background-color: #4169E1; padding: 20px; color: white; }
-.certification3 { grid-area: certification3; text-align: center; font-family: arial; background-color: #6B8E23; padding: 20px; color: white; }
-.certification4 { grid-area: certification4; text-align: center; font-family: arial; background-color: #FF8C00; padding: 20px; color: white; }
+.certification1 { grid-area: certification1; text-align: center; font-family: arial; background-color: #8B0000; padding: 20px; color: white; border-radius: 25px; }
+.certification2 { grid-area: certification2; text-align: center; font-family: arial; background-color: #4169E1; padding: 20px; color: white; border-radius: 25px; }
+.certification3 { grid-area: certification3; text-align: center; font-family: arial; background-color: #6B8E23; padding: 20px; color: white; border-radius: 25px; }
+.certification4 { grid-area: certification4; text-align: center; font-family: arial; background-color: #FF8C00; padding: 20px; color: white; border-radius: 25px; }
 
-.also { grid-area: also; text-align: center; font-family: arial; padding: 60px; background-color: #DCDCDC; }
+.also { grid-area: also; text-align: center; font-family: arial; padding: 60px; background-color: #DCDCDC; border-radius: 25px; }
 
 .smiley { grid-area: smiley; text-align: center; font-family: arial; padding: 30px; }
 
