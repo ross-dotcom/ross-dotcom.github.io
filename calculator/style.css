@@ -1,0 +1,39 @@
+.subtract { grid-area: subtract; }
+.add { grid-area: add; }
+.multiply { grid-area: multiply; }
+.divide { grid-area: divide; }
+.seven { grid-area: seven; }
+.eight { grid-area: eight; }
+.nine { grid-area: nine; }
+.four { grid-area: four; }
+.five { grid-area: five; }
+.six { grid-area: six; }
+.one { grid-area: one; }
+.two { grid-area: two; }
+.three { grid-area: three; }
+.zero { grid-area: zero; }
+.decimal { grid-area: decimal; }
+.clear { grid-area: clear; }
+.calculate { grid-area: calculate; }
+.display { grid-area: display; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'seven eight nine divide'
+        'four five six multiply'
+        'one two three subtract'
+        'clear zero decimal add'
+        'calculate display display display';
+    gap: 10px;
+    background-color: blue;
+    padding: 20px;
+    width: 35%;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
