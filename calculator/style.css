@@ -1,0 +1,23 @@
+.container { border: solid; width: 50%; margin: auto; height: 90%; padding: 10px; border-radius: 25px; background-color: #4169E1; }
+
+.form-control { width: 100%; height: 20%; font-size: 9vw; border-radius: 25px; }
+
+input[name="b7"] { width: 18%; height: 18%; font-size: 5vw; }
+input[name="b8"] { width: 18%; height: 18%; font-size: 5vw; }
+input[name="b9"] { width: 18%; height: 18%; font-size: 5vw; }
+input[name="addb"] { width: 18%; height: 18%; font-size: 5vw; }
+
+input[name="b4"] { width: 18%; height: 18%; font-size: 5vw; }
+input[name="b5"] { width: 18%; height: 18%; font-size: 5vw; }
+input[name="b6"] { width: 18%; height: 18%; font-size: 5vw; }
+input[name="subb"] { width: 18%; height: 18%; font-size: 5vw; }
+
+input[name="b1"] { width: 18%; height: 18%; font-size: 5vw; }
+input[name="b2"] { width: 18%; height: 18%; font-size: 5vw; }
+input[name="b3"] { width: 18%; height: 18%; font-size: 5vw; }
+input[name="mulb"] { width: 18%; height: 18%; font-size: 5vw; }
+
+input[name="b0"] { width: 18%; height: 18%; font-size: 5vw; }
+input[name="potb"] { width: 18%; height: 18%; font-size: 5vw; }
+input[name="divb"] { width: 18%; height: 18%; font-size: 5vw; }
+.red { width: 18%; height: 18%; font-size: 5vw; }
