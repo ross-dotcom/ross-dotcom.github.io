@@ -38,9 +38,10 @@
             <div id="tasker-header" class="tasker-header">
                 <input type="text" id="idea" placeholder="Enter a task">
                 <input type="button" value="Add task" id="add" onclick="myFunction()"/>
+                <script>enterToAdd()</script>
             </div>
             <div class="tasker-body">
-                <ul id="list"></ul>
+                <ol id="list"></ol>
             </div>
             <div>
                 <input type="button" value="Clear List" onclick="removeAll()"

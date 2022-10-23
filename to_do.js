@@ -5,12 +5,12 @@
 
 function display_time() {
 
-    /*n = new Date();
-    y = n.getFullYear;
+    n = new Date();
+    y = n.getFullYear();
     m = n.getMonth()+1;
-    d = n.getDate();*/
-    //document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-    document.getElementById("date").innerHTML = Date();
+    d = n.getDate();
+    document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+    //document.getElementById("date").innerHTML = Date();
 }
 
 function myFunction() {
@@ -37,4 +37,14 @@ function myFunction() {
 function removeAll() {
     
     document.getElementById("list").innerHTML = "";
+}
+
+function enterToAdd () {
+    var input = document.getElementById("idea");
+    input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("add").click();
+        }
+    });
 }
