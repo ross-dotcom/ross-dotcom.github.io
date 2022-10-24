@@ -3,14 +3,20 @@
 /* exported removeItem */
 /* exported display_time */
 
-function display_time() {
+/*function display_time() {
 
     n = new Date();
     y = n.getFullYear();
     m = n.getMonth()+1;
     d = n.getDate();
     document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
-    //document.getElementById("date").innerHTML = Date();
+}*/
+
+function display_the_time() {
+
+    let today = new Date();
+    let date = today.getFullYear() + '-' + (today.getMonth()+1) + '-' + today.getDate();
+    document.getElementById("date").innerHTML = date;
 }
 
 function myFunction() {
