@@ -8,13 +8,12 @@
 
 const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-const today = new Date();
+var today = new Date();
 var day = weekday[today.getDay()];
 var date = day + ', ' + today.getFullYear() + '-' + (today.getMonth()+1) + '-' + today.getDate();
 
 
 function display_the_time(){
-      
     document.getElementById("date").innerHTML = date;
 }
 
