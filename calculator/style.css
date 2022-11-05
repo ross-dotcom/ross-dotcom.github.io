@@ -1,203 +1,38 @@
-@media screen and (min-width: 900px){
-    body { background-color: #222129; }
-    
-    ::placeholder { color: black; }
-    
-    .container { width: 44%; margin: auto; height: 90%; padding: 10px; }
-    
-    .form-control { width: 74%; height: 15%; font-size: 6vw; border: none; background-color: white; color: black; }
-    
-    input[name="ac"] { width: 55.5%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="divb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b7"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b8"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b9"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="mulb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b4"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b5"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b6"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="subb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b1"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b2"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b3"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="addb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b0"] { width: 37%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="potb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="divb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    .red { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    .row_display { text-align: center; padding-bottom: 10px; }
-    .row_one { text-align: center; padding-bottom: 10px; }
-    .row_two { text-align: center; padding-bottom: 10px; }
-    .row_three { text-align: center; padding-bottom: 10px; }
-    .row_four { text-align: center; padding-bottom: 10px; }
-    .row_five { text-align: center; padding-bottom: 10px; }
-}
+body { background-color: #222129; }
 
-@media screen and (min-width: 700px){
-    body { background-color: #222129; }
-    
-    ::placeholder { color: black; }
-    
-    .container { width: 50%; margin: auto; height: 90%; padding: 10px; }
-    
-    .form-control { width: 74%; height: 15%; font-size: 6vw; border: none; background-color: white; color: black; }
-    
-    input[name="ac"] { width: 55.5%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="divb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b7"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b8"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b9"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="mulb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b4"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b5"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b6"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="subb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b1"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b2"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b3"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="addb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b0"] { width: 37%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="potb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="divb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    .red { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    .row_display { text-align: center; padding-bottom: 10px; }
-    .row_one { text-align: center; padding-bottom: 10px; }
-    .row_two { text-align: center; padding-bottom: 10px; }
-    .row_three { text-align: center; padding-bottom: 10px; }
-    .row_four { text-align: center; padding-bottom: 10px; }
-    .row_five { text-align: center; padding-bottom: 10px; }
-}
+::placeholder { color: black; }
 
-@media screen and (min-width: 600px){
-    body { background-color: #222129; }
-    
-    ::placeholder { color: black; }
-    
-    .container { width: 70%; margin: auto; height: 90%; padding: 10px; }
-    
-    .form-control { width: 74%; height: 15%; font-size: 6vw; border: none; background-color: white; color: black; }
-    
-    input[name="ac"] { width: 55.5%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="divb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b7"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b8"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b9"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="mulb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b4"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b5"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b6"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="subb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b1"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b2"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b3"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="addb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b0"] { width: 37%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="potb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="divb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    .red { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    .row_display { text-align: center; padding-bottom: 10px; }
-    .row_one { text-align: center; padding-bottom: 10px; }
-    .row_two { text-align: center; padding-bottom: 10px; }
-    .row_three { text-align: center; padding-bottom: 10px; }
-    .row_four { text-align: center; padding-bottom: 10px; }
-    .row_five { text-align: center; padding-bottom: 10px; }
-}
+.container { width: 44%; margin: auto; height: 90%; padding: 10px; }
 
-@media screen and (min-width: 500px){
-    body { background-color: #222129; }
-    
-    ::placeholder { color: black; }
-    
-    .container { width: 90%; margin: auto; height: 90%; padding: 10px; }
-    
-    .form-control { width: 74%; height: 15%; font-size: 6vw; border: none; background-color: white; color: black; }
-    
-    input[name="ac"] { width: 55.5%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="divb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b7"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b8"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b9"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="mulb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b4"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b5"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b6"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="subb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b1"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b2"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="b3"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="addb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b0"] { width: 37%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="potb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    input[name="divb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    .red { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
-    
-    .row_display { text-align: center; padding-bottom: 10px; }
-    .row_one { text-align: center; padding-bottom: 10px; }
-    .row_two { text-align: center; padding-bottom: 10px; }
-    .row_three { text-align: center; padding-bottom: 10px; }
-    .row_four { text-align: center; padding-bottom: 10px; }
-    .row_five { text-align: center; padding-bottom: 10px; }
-}
+.form-control { width: 74%; height: 15%; font-size: 6vw; border: none; background-color: white; color: black; }
 
-@media screen and (min-width: 300px){
-    body { background-color: #222129; }
-    
-    ::placeholder { color: black; }
-    
-    .container { max-width: 100%; height: 100%; }
-    
-    .form-control { width: 100%; height: 15%; font-size: 80px; border: none; background-color: white; color: black; }
-    
-    input[name="ac"] { width: 73.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    input[name="divb"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b7"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    input[name="b8"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    input[name="b9"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    input[name="mulb"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b4"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    input[name="b5"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    input[name="b6"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    input[name="subb"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b1"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    input[name="b2"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    input[name="b3"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    input[name="addb"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    
-    input[name="b0"] { width: 48%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    input[name="potb"] { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    
-    .red { width: 23.5%; height: 15%; font-size: 15px; border: none; color: white; background-color: #3a3847; }
-    
-    .row_display { text-align: center; padding-bottom: 10px; }
-    .row_one { text-align: center; padding-bottom: 10px; }
-    .row_two { text-align: center; padding-bottom: 10px; }
-    .row_three { text-align: center; padding-bottom: 10px; }
-    .row_four { text-align: center; padding-bottom: 10px; }
-    .row_five { text-align: center; padding-bottom: 10px; }
-}
+input[name="ac"] { width: 55.5%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+input[name="divb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+
+input[name="b7"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+input[name="b8"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+input[name="b9"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+input[name="mulb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+
+input[name="b4"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+input[name="b5"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+input[name="b6"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+input[name="subb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+
+input[name="b1"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+input[name="b2"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+input[name="b3"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+input[name="addb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+
+input[name="b0"] { width: 37%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+input[name="potb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+input[name="divb"] { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+
+.red { width: 18%; height: 15%; font-size: 4vw; border: none; color: white; background-color: #3a3847; }
+
+.row_display { text-align: center; padding-bottom: 10px; }
+.row_one { text-align: center; padding-bottom: 10px; }
+.row_two { text-align: center; padding-bottom: 10px; }
+.row_three { text-align: center; padding-bottom: 10px; }
+.row_four { text-align: center; padding-bottom: 10px; }
+.row_five { text-align: center; padding-bottom: 10px; }
