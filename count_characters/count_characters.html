@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Wesley Ross | Character Count Tool">
+        <meta name="author" content="Wesley Ross">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style_cc.css"/>
+        <title>Wesley Ross | Character Count Tool</title>
+    </head>
+    <body>
+        <div class="container">
+            <script src="count_characters.js"></script>
+            <div class="title">
+                <h1>Character Counter Tool</h1>
+            </div>
+            <div class="text_box_section">
+                <textarea id="text_box" placeholder="Type text here..." rows="20" cols="90"></textarea>
+            </div>
+            <div class="buttons">
+                <button class="calculate_button" onclick="count_chars()">Calculate</button>
+                <button class="clear_text_button" onclick="clear_text()">Clear Text</button>
+                <button class="reset_result_button" onclick="reset_result()">Reset Result</button>
+                <button class="clear_all_button" onclick="clear_all()">Clear All</button>
+            </div>
+                <div class="results">
+                <h1 id="update_result">0</h1>
+            </div>
+        </div>
+    </body>
+</html>
