@@ -1,67 +1,315 @@
-.container {
-  width: 100%;
-  height: auto;
+/*Mobile: 320px - 480px*/
+@media screen and (min-width: 320px){
+  body { background-color: #F0F8FF; font-family: "Lucida Console", "Courier New", monospace; }
+  
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .text_box_section {
+    text-align: center;
+  }
+  
+  textarea { max-width: 100%; }
+  
+  .calculate_button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: list-item;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  
+  .clear_text_button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: list-item;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  
+  .reset_result_button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 14px 19px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: list-item;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  
+  .clear_all_button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 14px 33px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: list-item;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  
+  .results {
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
-.title {
-  text-align: center;
-  font-size: 2vw;
+/*iPads/tablets: 481px - 768px*/
+@media screen and (min-width: 320px){
+  body { background-color: #F0F8FF; font-family: "Lucida Console", "Courier New", monospace; }
+  
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .text_box_section {
+    text-align: center;
+  }
+  
+  textarea { max-width: 90%; }
+  
+  .calculate_button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: list-item;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  
+  .clear_text_button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: list-item;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  
+  .reset_result_button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 14px 19px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: list-item;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  
+  .clear_all_button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 14px 33px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    display: list-item;
+    margin: auto;
+    margin-bottom: 5px;
+  }
+  
+  .results {
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
-.text_box_section {
-  text-align: center;
+/*Laptop: 769px - 1024px*/
+@media screen and (min-width: 769px){
+  body { background-color: #F0F8FF; font-family: "Lucida Console", "Courier New", monospace; }
+  
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .text_box_section {
+    text-align: center;
+  }
+  
+  /*textarea { max-width: 80%; }*/
+  
+  .buttons { margin: auto; width: 70%; }
+  
+  .calculate_button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .clear_text_button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .reset_result_button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .clear_all_button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .results {
+    text-align: center;
+    font-size: 2.5vw;
+  }
 }
 
-.calculate_button {
-  margin-left: 270px;
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.clear_text_button {
-  background-color: blue;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.reset_result_button {
-  background-color: blue;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.clear_all_button {
-  background-color: red;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.results {
-  text-align: center;
-  font-size: 2.5vw;
+/*Laptop: 1025px - 1200px*/
+@media screen and (min-width: 1025px){
+  body { background-color: #F0F8FF; font-family: "Lucida Console", "Courier New", monospace; }
+  
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .text_box_section {
+    text-align: center;
+  }
+  
+  textarea { width: 60%; }
+  
+  .buttons { margin: auto; width: 45%; }
+  
+  .calculate_button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .clear_text_button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .reset_result_button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .clear_all_button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .results {
+    text-align: center;
+    font-size: 2.5vw;
+  }
 }
