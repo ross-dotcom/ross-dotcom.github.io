@@ -15,28 +15,17 @@
             <h1>Budget</h1>
         </div>
         <div class="container">
-            <table>
+            <table id="myTable">
                 <tr>
                     <th>Total income: <div id="insert_total">0</div></th>
                     <th><label for="total_amount">Enter total income: </label><input type="text" id="total_amount" name="total_amount"><button class="submit_total_button" onclick="submit_total_amount()">Submit</button></th>
                 </tr>
                 <tr>
                     <td><input type="text" id="xp" placeholder="Enter expense"></td>
+                    <td><input type="text" id="xa" placeholder="Enter amount"></td>
                     <td><input type="button" value="Add expense" id="add" onclick="myFunction()"/></td>
-                    <!--<script>enterToAdd()</script>-->
-                </tr>
-                <tr>
-                    <td><ol id="list"></ol></td>
                 </tr>
             </table>
-            <div id="expenses" class="expenses">
-                <div class="expense-body">
-                    <ol id="list"></ol>
-                </div>
-                <div>
-                    <input type="button" value="Clear List" onclick="removeAll()"/>
-                </div>
-            </div>
         </div>
     </body>
 </html>
