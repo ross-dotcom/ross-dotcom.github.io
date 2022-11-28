@@ -12,6 +12,7 @@ function submit_total_amount(){
     }
     else {
         document.getElementById("insert_total").innerHTML = document.getElementById("total_amount").value;
+        document.getElementById("insert_rem").innerHTML = document.getElementById("total_amount").value;
         document.getElementById("total_amount").value = "";
     }
 }
@@ -51,6 +52,7 @@ function myFunction(){
         
         add_row();
         submit_expense_amount(parseInt(amount));
+        remaining_amount(parseInt(amount));
     }
 }
 
@@ -58,6 +60,6 @@ function submit_expense_amount(a){
     document.getElementById("insert_expense").innerHTML = parseInt(document.getElementById("insert_expense").innerHTML) + parseInt(a);
 }
 
-/*function remaining_amount(a){
-    document.getElementById("insert_expense").innerHTML = parseInt(document.getElementById("insert_expense").innerHTML) + parseInt(a);
-}*/
+function remaining_amount(a){
+    document.getElementById("insert_rem").innerHTML = parseInt(document.getElementById("insert_rem").innerHTML) - parseInt(a);
+}
