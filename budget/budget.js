@@ -1,6 +1,7 @@
 /* exported submit_total_amount */
 /* exported myFunction */
 /* exported submit_expense_amount */
+/* exported remaining_amount */
 
 var expense_name = "";
 var amount = 0;
@@ -49,11 +50,14 @@ function myFunction(){
         amount = amt_text;
         
         add_row();
-        //submit_expense_amount();
+        submit_expense_amount(parseInt(amount));
     }
 }
 
-function submit_expense_amount(){
-    //document.getElementById("insert_expense").innerHTML += parseInt(amount);
-    //document.getElementById("total_amount").value = "";
+function submit_expense_amount(a){
+    document.getElementById("insert_expense").innerHTML = parseInt(document.getElementById("insert_expense").innerHTML) + parseInt(a);
 }
+
+/*function remaining_amount(a){
+    document.getElementById("insert_expense").innerHTML = parseInt(document.getElementById("insert_expense").innerHTML) + parseInt(a);
+}*/
