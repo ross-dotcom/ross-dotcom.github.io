@@ -37,13 +37,7 @@ function myFunction(){
     else if (amt_text == ""){
         alert("Please enter an expense amount");
     }
-    else {
-        var li = document.createElement("li");
-        li.innerHTML = text;
-        
-        var a = document.createElement("p");
-        a.innerHTML = amt_text;
-    
+    else {    
         document.getElementById("xp").value = ""; //Clear input field on click.
         document.getElementById("xa").value = ""; //Clear input field on click.
         
