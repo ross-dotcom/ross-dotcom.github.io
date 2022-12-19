@@ -12,7 +12,8 @@
   <body>
     <div class="container-fluid">
       <div class="row flex-nowrap">
-          <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white w-25 border-end">
+          <!--Navbar-->
+          <div class="d-none d-sm-inline col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white w-25 border-end">
               <div class="d-flex flex-column align-items-center align-items-md-start px-3 pt-2 text-white min-vh-100">
                   <ul class="nav nav-pills flex-column mb-md-auto mb-0 align-items-center align-items-md-start" id="menu">
                       <li class="nav-item">
@@ -24,7 +25,7 @@
                               <i class="fs-3 bi-house text-dark"></i> <span class="fs-5 ms-1 d-none d-md-inline text-dark">Home</span>
                           </a>
                           <a href="#" class="nav-link px-0 align-middle">
-                              <i class="fs-3 bi-hash text-dark"></i> <span class="fs-5 ms-1 d-none d-md-inline text-dark">Explore</span>
+                              <i class="fs-3 bi-search text-dark"></i> <span class="fs-5 ms-1 d-none d-md-inline text-dark">Explore</span>
                           </a>
                           <a href="#" class="nav-link px-0 align-middle">
                               <i class="fs-3 bi-bell text-dark"></i> <span class="fs-5 ms-1 d-none d-md-inline text-dark">Notifications</span>
@@ -54,7 +55,7 @@
                   <hr>
                   <div class="dropdown pb-4">
                       <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                          <img src="../images/smile_after.png" width="30" height="30" class="rounded-circle">
+                          <img src="../images/smile_after.png" width="40" height="40" class="rounded-circle">
                           <span class="d-none d-md-inline mx-1 text-dark">wross843</span>
                       </a>
                       <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
@@ -67,14 +68,62 @@
                   </div>
               </div>
           </div>
-          <div class="col py-3">
-              <h5>Home</h5>
-              <div class="mb-3">
-                <textarea class="form-control border-0" id="exampleFormControlTextarea1" rows="5" placeholder="What's happening?"></textarea>
-                <button type="submit" class="btn btn-primary rounded-pill">Tweet</button>
-              </div>
-              <hr>
+          <!--Navbar: moved to the bottom of the screen on 'xs', hidden on size greater than 'sm'.-->
+          <div class="d-sm-none fixed-bottom border-top">
+            <nav class="navbar">
+              <a href="#" class="nav-link px-0">
+                <i class="fs-3 bi-house text-dark"></i>
+              </a>
+              <a href="#" class="nav-link px-0">
+                <i class="fs-3 bi-search text-dark"></i>
+              </a>
+              <a href="#" class="nav-link px-0 align-middle">
+                <i class="fs-3 bi-bell text-dark"></i>
+              </a>
+              <a href="#" class="nav-link px-0 align-middle">
+                <i class="fs-3 bi-envelope text-dark"></i>
+              </a>
+            </nav>
           </div>
+          <!--Home-->
+          <div class="col py-3">
+              <div class="d-none d-sm-block">
+                <h5>Home</h5>
+                <div class="mb-3 d-none d-sm-inline">
+                  <div class="row p-2">
+                    <div class="col-1">
+                      <img src="../images/smile_after.png" width="40" height="40" class="rounded-circle">
+                    </div>
+                    <div class="col-11">
+                      <textarea class="form-control border-0 fs-5" id="exampleFormControlTextarea1" rows="4" placeholder="What's happening?"></textarea>
+                      <a href="#"><i class="fs-4 bi bi-card-image m-2"></i></a>
+                      <a href="#"><i class="fs-4 bi bi-filetype-gif m-2"></i></a>
+                      <a href="#"><i class="fs-4 bi bi-list-ul m-2"></i></a>
+                      <a href="#"><i class="fs-4 bi bi-emoji-smile m-2"></i></a>
+                      <a href="#"><i class="fs-4 bi bi-calendar m-2"></i></a>
+                      <a href="#"><i class="fs-4 bi bi-geo-alt m-2"></i></a>
+                      <button type="submit" class="btn btn-primary rounded-pill float-end">Tweet</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Home: changed on size 'xs'-->
+              <div class="d-sm-none">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="../images/smile_after.png" width="30" height="30" class="rounded-circle">
+                  </div>
+                  <div class="col-10">
+                    <h5>Home</h5>
+                  </div>
+                </div>
+                <br>
+              </div>
+              <div class="border-top">
+                <!--Insert tweets here...-->
+              </div>
+          </div>
+          <!--Search-->
           <div class="d-none d-md-block col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white w-25 border-start">
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
               <div class="input-group">
