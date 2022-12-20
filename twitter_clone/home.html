@@ -17,11 +17,11 @@
               <div class="d-flex flex-column align-items-center align-items-md-start px-3 pt-2 text-white min-vh-100">
                   <ul class="nav nav-pills flex-column mb-md-auto mb-0 align-items-center align-items-md-start" id="menu">
                       <li class="nav-item">
-                          <a href="#" class="nav-link align-middle px-0">
+                          <a href="https://ross-dotcom.github.io/twitter_clone/login.html" class="nav-link align-middle px-0">
                               <i class="fs-3 bi-twitter"></i>
                           </a>
                           <br>
-                          <a href="#" class="nav-link align-middle px-0">
+                          <a href="https://ross-dotcom.github.io/twitter_clone/home.html" class="nav-link align-middle px-0">
                               <i class="fs-3 bi-house text-dark"></i> <span class="fs-5 ms-1 d-none d-md-inline text-dark"><b>Home</b></span>
                           </a>
                           <a href="#" class="nav-link px-0 align-middle">
@@ -56,7 +56,7 @@
                   <div class="dropdown pb-4">
                       <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                           <i class="fs-1 bi bi-person-circle m-2"></i>
-                          <span class="d-none d-md-inline mx-1 text-dark">wross843</span>
+                          <span class="d-none d-md-inline mx-1 text-dark">user123</span>
                       </a>
                       <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
                           <li><a class="dropdown-item" href="#">Add an existing account</a></li>
@@ -99,23 +99,26 @@
                 <div class="mb-3 d-none d-sm-inline">
                   <div class="row p-2">
                     <div class="col-1">
-                      <i class="fs-1 bi bi-person-circle m-2"></i>
+                      <i class="fs-1 bi bi-person-circle m-2" id="userLogo"></i>
                     </div>
                     <div class="col-11">
-                      <textarea class="form-control border-0 fs-5" id="exampleFormControlTextarea1" rows="4" placeholder="What's happening?"></textarea>
+                      <textarea class="form-control border-0 fs-5" id="exampleFormControlTextarea1" rows="4" placeholder="What's happening?"></textarea><br>
                       <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Media"><i class="fs-4 bi bi-card-image m-2"></i></a>
                       <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GIF"><i class="fs-4 bi bi-filetype-gif m-2"></i></a>
                       <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Poll"><i class="fs-4 bi bi-list-ul m-2"></i></a>
                       <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Emoji"><i class="fs-4 bi bi-emoji-smile m-2"></i></a>
                       <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Schedule"><i class="fs-4 bi bi-calendar m-2"></i></a>
                       <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Location"><i class="fs-4 bi bi-geo-alt m-2"></i></a>
-                      <button type="submit" class="btn btn-primary rounded-pill float-end">Tweet</button>
+                      <button type="submit" class="btn btn-primary rounded-pill float-end" id="add" onclick="myFunction()">Tweet</button>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="d-none d-sm-block border-top">
-                <!--Insert tweets here...-->
+                <br>
+                <div>
+                  <p id="list"></p>
+                </div>
               </div>
               
               <!--Home: changed on size 'xs'-->
