@@ -22,7 +22,7 @@
                           </a>
                           <br>
                           <a href="#" class="nav-link align-middle px-0">
-                              <i class="fs-3 bi-house text-dark"></i> <span class="fs-5 ms-1 d-none d-md-inline text-dark">Home</span>
+                              <i class="fs-3 bi-house text-dark"></i> <span class="fs-5 ms-1 d-none d-md-inline text-dark"><b>Home</b></span>
                           </a>
                           <a href="#" class="nav-link px-0 align-middle">
                               <i class="fs-3 bi-search text-dark"></i> <span class="fs-5 ms-1 d-none d-md-inline text-dark">Explore</span>
@@ -68,6 +68,7 @@
                   </div>
               </div>
           </div>
+          
           <!--Navbar: moved to the bottom of the screen on 'xs', hidden on size greater than 'sm'.-->
           <div class="d-sm-none fixed-bottom border-top">
             <nav class="navbar">
@@ -85,8 +86,11 @@
               </a>
             </nav>
           </div>
-          <!--Home-->
+
+          
+          <!--Middle section-->
           <div class="col py-3">
+              <!--Home-->
               <div class="d-none d-sm-block">
                 <h5>Home</h5>
                 <div class="mb-3 d-none d-sm-inline">
@@ -107,28 +111,41 @@
                   </div>
                 </div>
               </div>
-              <!--Home: changed on size 'xs'-->
-              <div class="d-sm-none">
-                <div class="row">
-                  <div class="col-2">
-                    <img src="../images/smile_after.png" width="30" height="30" class="rounded-circle">
-                  </div>
-                  <div class="col-10">
-                    <h5>Home</h5>
-                  </div>
-                </div>
-                <br>
+              <div class="d-none d-sm-block border-top">
+                <!--Insert tweets here...-->
               </div>
-              <div class="border-top">
+              
+              <!--Home: changed on size 'xs'-->
+              <div class="d-sm-none fixed-top border-bottom">
+                <nav class="navbar navbar-light">
+                  <div class="container-fluid">
+                    <a class="navbar-brand fs-3" href="#">
+                      <img src="../images/smile_after.png" width="30" height="30" class="d-inline-block aign-text-top rounded-circle">
+                      <b>Home</b>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+              <div class="">
                 <!--Insert tweets here...-->
               </div>
           </div>
+          
+          
           <!--Search-->
           <div class="d-none d-md-block col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white w-25 border-start">
-            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white">
               <div class="input-group">
                 <input class="form-control border-end-0 border rounded-pill" type="text" value="Search Twitter" id="example-search-input">
               </div>
+            </div>
+            <br>
+            <div class="card" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 1</li>
+              </ul>
             </div>
           </div>
       </div>
