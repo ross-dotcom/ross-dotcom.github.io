@@ -20,11 +20,23 @@
 * Built with HTML, Bootstrap 5 and JavaScript.
 * Calculator functionality: Clear, Division, Multiplication, Subtraction, Addition, Equal.
 
+# ross-dotcom.github.io/budget/budget
+* The purpose of this web app was to learn JavaScript, apply what I've learnt and encounter any issues to fix as part of the learning process.
+* Built with HTML, Bootstrap 5 and JavaScript.
+* Total income, Enter expense + amount, calculate Total Expense and Amount Remaining.
+
+# ross-dotcom.github.io/twitter_clone/login AND ross-dotcom.github.io/twitter_clone/home.html
+* The purpose of this web app was to practice my HTML, CSS, Bootstrap and JavaScript skills and encounter any issues to fix as part of the learning process.
+* Built with HTML, CSS, Bootstrap 5 and JavaScript.
+* There is no authentication involved in the login screen as I am focused on Front End, using JavaScript I check that both the Email address AND Password is filled in before continuing to the home page. An alert is executed when one (or both) of the two fields is blank.
+* The home page alerts that the project is in progress and not completed yet. The front end allows for the end user to type in the text box, Tweet, and will be able to see their tweets in a list below. This is made possible using JavaScript. Because this project is in progress, more functionality gets added every day.
+
 # Source Code for the following projects on Github:
 * Wesley Ross - Junior Python and Front End Web Developer.
 * Character Counter Tool.
 * To-Do Web Application.
 * Calculator.
+* Budget (Expense Tracker).
 * Beautiful Soup.
 * Data Structures and Algorithms (Python)
-
+* Twitter Clone.
