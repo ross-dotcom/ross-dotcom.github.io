@@ -8,21 +8,19 @@ function alertOnLoad(){
 function myFunction(){
     
     var user = 'user123';
+    var h4 = document.createElement("h4");
+    h4.innerHTML = user;
     
-    var h = document.createElement("h4");
-    h.innerHTML = user;
+    document.getElementById("list").appendChild(h4);
     
     var text = document.getElementById("exampleFormControlTextarea1").value;
+    var p = document.createElement("p");
+    p.innerHTML = text;
     
-    var li = document.createElement("p");
-    li.innerHTML = text;
+    document.getElementById("list").appendChild(p);
     
-    li.appendChild(h);
-    
-    document.getElementById("list").appendChild(li);
     document.getElementById("exampleFormControlTextarea1").value = ""; //Clear input field on click.
     
     var line = document.createElement("HR");
-    
     document.getElementById("list").appendChild(line);
 }
