@@ -6,6 +6,17 @@ function alertOnLoad(){
 }
 
 function myFunction(){
+  
+    const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var today = new Date();
+    var day = today.getDate();
+    var mon = month[today.getMonth()];
+    var yr = today.getFullYear();
+    var theDate = day+" "+mon+" "+yr;
+    var p_date = document.createElement("p");
+    p_date.innerHTML = theDate;
+    
+    document.getElementById("list").appendChild(p_date);
     
     var user = 'user123';
     var h4 = document.createElement("h4");
