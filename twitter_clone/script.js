@@ -1,5 +1,6 @@
 /* exported alertOnLoad */
 /* exported myFunction */
+/* exported submit */
 
 function alertOnLoad(){
   alert('Please note that this project is in progress and not fully completed.');
@@ -34,4 +35,12 @@ function myFunction(){
     
     var line = document.createElement("HR");
     document.getElementById("list").appendChild(line);
+}
+
+function submit() {
+  if (document.getElementById("validationDefault01").value === "" || document.getElementById("validationDefault02").value === ""){
+    alert("Email address or Password required!");
+  } else {
+    window.location.href = 'https://ross-dotcom.github.io/twitter_clone/home.html';
+  }
 }
