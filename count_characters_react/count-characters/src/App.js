@@ -1,5 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
+import TypeText from './text';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <h1>
           Character Counter Tool (with React)
         </h1>
+        <TypeText />
       </header>
     </div>
   );
