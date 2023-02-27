@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function TypeText(props) {
-  const [name, setName] = useState("");
+  const [txt, setText] = useState("");
   
   //const searchButtonPressed = () => {
   //  console.log(name);
@@ -10,9 +10,9 @@ function TypeText(props) {
   return (
     <div>
       <form>
-        <input id="name-field" type="text" value={name} onChange={(e) => setName(e.target.value)}/>
+        <input id="text-field" type="text" value={txt} onChange={(e) => setText(e.target.value)}/>
       </form>
-      <p>Count: {name}</p>
+      <p>Count: {txt.length}</p>
     </div>
   )
 }
