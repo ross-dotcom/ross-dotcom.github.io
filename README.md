@@ -31,6 +31,11 @@
 * There is no authentication involved in the login screen as I am focused on Front End, using JavaScript I check that both the Email address AND Password is filled in before continuing to the home page. An alert is executed when one (or both) of the two fields is blank.
 * The home page alerts that the project is in progress and not completed yet. The front end allows for the end user to type in the text box, Tweet, and will be able to see their tweets in a list below. This is made possible using JavaScript. Because this project is in progress, more functionality gets added every day.
 
+# ross-dotcom.github.io/count_characters_react/
+* The purpose of this project was to learn React, apply what I've learnt and encounter any issues to fix as part of the learning process.
+* Built with ReactJS.
+* This Character Counter Tool calculates characters typed into the text box as they are typed, has a button to clear the text only, a button to reset the result only, and a button to clear all.
+
 # Source Code for the following projects on Github:
 * Wesley Ross - Junior Python and Front End Web Developer.
 * Character Counter Tool.
