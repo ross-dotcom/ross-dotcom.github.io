@@ -19,7 +19,7 @@ function TypeText(props) {
   return (
     <div>
       <form>
-        <input id="text-field" type="text" size="100" height="200px" placeholder="Type text here..." value={txt} onChange={(e) => setText(e.target.value)}/>
+        <input id="text-field" type="text" placeholder="Type text here..." value={txt} onChange={(e) => setText(e.target.value)}/>
       </form>
       <h4>Count: <p id="count">{txt.length}</p></h4>
       <button type="button" onClick={clearTextPressed}>Clear Text</button>
