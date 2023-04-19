@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h2>
-          Character Counter Tool (with React)
+          Character Counter Tool (with React.js)
         </h2>
         <TypeText />
       </header>
