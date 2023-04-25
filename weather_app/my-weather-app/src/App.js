@@ -1,57 +1,42 @@
 import './App.css';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
-const WeatherApp = () => {
-  const [location, setLocation] = useState("");
+function WeatherApp() {
+  const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState({});
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const apiKey = "t92D6mKl5a0oICC5NVbjMZmG9Br893EA";
-
-  const fetchWeatherData = async () => {
-    setIsLoading(true);
-    try {
-      const response = await fetch(`http://dataservice.accuweather.com/locations/v1/cities/search?q=${location}&apikey=${apiKey}`);
-      const data = await response.json();
-      const locationKey = data[0].Key;
-      const weatherResponse = await fetch(`http://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${apiKey}`);
-      const weatherData = await weatherResponse.json();
-      setWeatherData(weatherData[0]);
-      setIsLoading(false);
-      setError(null);
-    } catch (error) {
-      setIsLoading(false);
-      setError(error.message);
-    }
-  };
 
   useEffect(() => {
-    fetchWeatherData();
-  },);
+    const fetchData = async () => {
+      const result = await axios(
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ac6a3bbf6268da14ba00ef8494a5f149`
+      );
+      setWeatherData(result.data);
+    };
+    fetchData();
+  }, [city]);
 
-  const handleSearch = (event) => {
-    event.preventDefault();
-    fetchWeatherData();
+  const handleInputChange = (event) => {
+    setCity(event.target.value);
   };
 
   return (
     <div>
       <h1>Weather App</h1>
-      <form onSubmit={handleSearch}>
-        <input type="text" placeholder="Enter location" value={location} onChange={(event) => setLocation(event.target.value)} />
-        <button type="submit">Search</button>
-      </form>
-      {isLoading && <p>Loading...</p>}
-      {error && <p>{error}</p>}
-      {weatherData && (
-        <div>
-          <p>Temperature: {weatherData.Temperature.Imperial.Value} &deg;F</p>
-          <p>Weather Text: {weatherData.WeatherText}</p>
-        </div>
-      )}
+      <input type="text" onChange={handleInputChange} />
+      <div>
+        {weatherData && weatherData.main && (
+          <div>
+            <h2>{weatherData.name}</h2>
+            <p>{weatherData.weather[0].description}</p>
+            <p>Temperature: {weatherData.main.temp} K</p>
+            <p>Humidity: {weatherData.main.humidity}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
-};
+}
 
 export default WeatherApp;
