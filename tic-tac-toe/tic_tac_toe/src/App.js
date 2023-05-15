@@ -14,13 +14,13 @@ function App() {
 	// Sets the reset property to true which starts the chain reaction of resetting the board.
 	const resetBoard = () => {
 		setReset(true);
-	}
+	};
 
 	return (
 		<div className="App">
-      <h1 className="nameOf">
-        TIC TAC TOE
-      </h1>
+			<h1 className="nameOf">
+			  TIC TAC TOE
+			</h1>
 			{/* Shrinks the popup when there is no winner */}
 			<div className={`winner ${winner !== '' ? '' : 'shrink'}`}>
 				{/* Display the current winner */}
@@ -31,8 +31,7 @@ function App() {
 				</button>
 			</div>
 			{/* Custom made board component comprising of the tic-tac-toe board */}
-			<Board reset={reset} setReset={setReset} winner={winner}
-				setWinner={setWinner} />
+			<Board reset={reset} setReset={setReset} winner={winner} setWinner={setWinner} />
 			<Info />
 		</div>
 	);
